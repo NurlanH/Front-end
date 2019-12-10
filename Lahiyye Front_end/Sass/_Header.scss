@@ -1,0 +1,227 @@
+header{
+    width: 100%;
+    height: 90px;
+    background-color: $MidColor;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 5px $DarkShadow;
+    position: relative;
+   
+
+    .brand{
+        h3{
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px;
+                a{
+                    color: $WhiteFontColor;
+                    text-decoration: none;
+                    padding: 10px 0;
+                }
+
+           
+
+            &:hover{
+                background-color: $Peri;
+                a{
+                    color: $DarkFontColor;
+                    text-decoration: none;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+
+    .navSecControl{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .navSection{
+            ul{
+                display: flex;
+                margin-bottom: 0;
+                align-items: center;
+                .navForm{
+                    padding: 5px 0;
+                    i{
+                        color: $WhiteFontColor;
+                    }
+                    a{
+                        color:$WhiteFontColor;
+                    }
+                }
+                li{
+                    list-style: none;
+                    margin-right: 20px;
+                    background-color: $MidColor;
+                    font-weight: 700;  
+                    cursor: pointer;
+                    a{
+                        color:  $WhiteFontColor;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        &::selection{
+                            background: none;
+                        }
+                    }
+
+                   
+
+                    &:hover{
+                        background-color:$Peri;
+                        a{
+                            color:$DarkFontColor;
+                        }
+                        i{
+                            color: $DarkFontColor;
+                        }
+                    }
+
+                    
+
+                }
+                li:last-child{
+                    margin-right: 0;
+                }
+                .logBtn,.regBtn{
+                    padding: 5px 10px;
+                }
+
+                select#langSelect{
+                    background:$MidColor!important;
+                    color: $WhiteFontColor;
+                    padding: 10px;
+                    font-weight: 700;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+
+           
+        }
+
+
+        .respNav{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+// Responsive
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    header{
+        height: 100px;
+        .brand {
+
+            h3{
+                font-size: 1em;
+                margin: 0;
+            }
+        }
+        
+        .navSecControl {
+            .navSection {
+                display: none;
+                ul{
+                    padding-left: 10px;
+                 li:not(:last-child){margin-right: 12px;}
+                 .navForm,.logBtn,.regBtn{
+                    display: inline-flex;
+                    align-items: center;
+                    i{
+                        font-size: 0.7em;
+                    }
+                    a{
+                        font-size: 0.7em;
+                        padding: 3px 4px;
+                    }
+                 }
+
+                 
+                select#langSelect{
+                    background:$MidColor!important;
+                    color: $WhiteFontColor;
+                    padding: 7px 6px;
+                    font-weight: 700;
+                    font-size: 0.8em;
+                    outline: none;
+                }
+                 
+                }
+            }
+
+
+            .respNav{
+                display: flex;
+                width: 40px;
+                height: 40px;
+                background-color: $MidColor;
+                border: 1px solid $BorderColor;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                i{
+                    color: $WhiteFontColor;
+                }
+
+            
+
+                &:hover{
+                    background-color: $Peri;
+                    
+                    i{
+                        color: $DarkFontColor;
+                    }
+                }
+               
+            }
+        }
+        
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        .navSecControl{
+            .navSection{
+                ul{
+                    padding-left: 0;
+                    li{
+                        display: inline-flex;
+                        align-items: center;
+                        a{
+                            padding: 5px 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 2560px){
+    header{
+        .navSecControl{
+            .navSection{
+                ul{
+                    li{
+                        padding: 10px 0!important;
+                        a{
+                            padding: 10px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
