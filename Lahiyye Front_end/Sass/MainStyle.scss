@@ -45,7 +45,7 @@ html,body{
     top: 0;
     left: 0;
     padding: 10px;
-    background-color: $MidColor;
+    background-color: red;
     z-index: 50;
     display: none;
     .closeSec{
@@ -114,7 +114,7 @@ html,body{
                 padding: 10px;
                 select#langSelect{
                     width:100%;
-                    background:$MidColor!important;
+                    background:$WebBackGround!important;
                     color: $WhiteFontColor;
                     padding: 10px;
                     font-weight: 700;

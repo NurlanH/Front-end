@@ -1,7 +1,7 @@
 header{
     width: 100%;
     height: 90px;
-    background-color: $MidColor;
+    background-color: $WebBackGround;
     display: flex;
     align-items: center;
     box-shadow: 0 1px 5px $DarkShadow;
@@ -55,7 +55,7 @@ header{
                 li{
                     list-style: none;
                     margin-right: 20px;
-                    background-color: $MidColor;
+                    background-color: $WebBackGround;
                     font-weight: 700;  
                     cursor: pointer;
                     a{
@@ -90,7 +90,7 @@ header{
                 }
 
                 select#langSelect{
-                    background:$MidColor!important;
+                    background:$WebBackGround!important;
                     color: $WhiteFontColor;
                     padding: 10px;
                     font-weight: 700;
@@ -145,7 +145,7 @@ header{
 
                  
                 select#langSelect{
-                    background:$MidColor!important;
+                    background:$WebBackGround!important;
                     color: $WhiteFontColor;
                     padding: 7px 6px;
                     font-weight: 700;
@@ -161,7 +161,7 @@ header{
                 display: flex;
                 width: 40px;
                 height: 40px;
-                background-color: $MidColor;
+                background-color: $WebBackGround;
                 border: 1px solid $BorderColor;
                 justify-content: center;
                 align-items: center;
