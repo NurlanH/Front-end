@@ -16,14 +16,14 @@
         display: inline-block;
         height: 100%;
         border: 1px solid $BorderColor;
-        background-color: $WebBackGround;
+        background-color: $MainColor;
         overflow: hidden;
         padding: 10px;
         
 
         .owl-dots span{
             box-shadow: -2px 2px 0 $WhiteShadow;
-            background:$BlueBerry;
+            background:#ccc;
             transform: translate(0px,0px);
 
         }

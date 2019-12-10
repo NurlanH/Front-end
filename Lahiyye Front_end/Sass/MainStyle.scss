@@ -16,7 +16,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color: $BlueBerry;
+    background-color: $WebBackGround;
 }
 
 
@@ -37,92 +37,3 @@ html,body{
 }
 
 
-//for responsive navLayout
-.resNavLayout{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    background-color: red;
-    z-index: 50;
-    display: none;
-    .closeSec{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 10px;
-        .closeNav{
-        width: 40px;
-        height: 40px;
-        transition: all 0.1s ease-in-out;
-        border: 1px solid $BorderColor;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        color: $WhiteFontColor;
-        cursor: pointer;
-
-        &:hover{
-            background-color: $Peri;
-            
-            i{
-                color: $DarkFontColor;
-            }
-        }
-    }
-    }
-
-    .resnavSec{
-        margin-top: 50px;
-
-        ul{
-            padding: 0;
-
-            li{
-                margin-bottom:10px;
-                transform: translate(0px,0px);
-                list-style: none;
-                a{
-                    text-decoration: none;
-                    color:$WhiteFontColor;
-                    display: block;
-                    padding:10px;
-                    text-align:center;
-                    font-weight: bold;
-                }
-
-
-                
-                &:active{
-                    box-shadow: 0px 0px 0px $WhiteShadow;
-                    transform: translate(-4px,4px);
-                }
-
-                &:hover{
-                    background-color:$Peri;
-                    a{
-                        color:$DarkFontColor;
-                    }
-                    i{
-                        color: $DarkFontColor;
-                    }
-                }
-            }
-
-            .resLangBox{
-                padding: 10px;
-                select#langSelect{
-                    width:100%;
-                    background:$WebBackGround!important;
-                    color: $WhiteFontColor;
-                    padding: 10px;
-                    font-weight: 700;
-                    outline: none;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    
-}
