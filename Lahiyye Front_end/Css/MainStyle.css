@@ -57,8 +57,6 @@
 
 .resNavLayout .resnavSec ul li {
   margin-bottom: 10px;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
   list-style: none;
 }
 
@@ -71,13 +69,6 @@
   font-weight: bold;
 }
 
-.resNavLayout .resnavSec ul li:active {
-  -webkit-box-shadow: 0px 0px 0px #ffffff;
-          box-shadow: 0px 0px 0px #ffffff;
-  -webkit-transform: translate(-4px, 4px);
-          transform: translate(-4px, 4px);
-}
-
 .resNavLayout .resnavSec ul li:hover {
   background-color: #ffffff;
 }
@@ -88,6 +79,22 @@
 
 .resNavLayout .resnavSec ul li:hover i {
   color: #1c2c58;
+}
+
+.resNavLayout .resnavSec ul #resProfile a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resNavLayout .resnavSec ul #resProfile a img {
+  margin-left: 5px;
 }
 
 .resNavLayout .resnavSec ul .resLangBox {
@@ -318,6 +325,20 @@ header .navSecControl .respNav {
   header .navSecControl .navSection ul li a {
     padding: 5px 3px;
   }
+  header .navSecControl .navSection ul #forProfile {
+    padding: 5px 0 !important;
+  }
+  header .navSecControl .navSection ul #forProfile a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navSecControl .navSection ul #forProfile a img {
+    margin-left: 5px;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 2560px) {
@@ -326,6 +347,20 @@ header .navSecControl .respNav {
   }
   header .navSecControl .navSection ul li a {
     padding: 10px 10px;
+  }
+  header .navSecControl .navSection ul #forProfile {
+    padding: 0 !important;
+  }
+  header .navSecControl .navSection ul #forProfile a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navSecControl .navSection ul #forProfile a img {
+    margin-left: 5px;
   }
 }
 
@@ -493,6 +528,28 @@ footer p::selection {
   padding: 10px;
 }
 
+#AccountBox .logWithOtherSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#AccountBox .logWithOtherSocial .socialBox {
+  border: 1px solid #f3efca;
+  padding: 10px 20px;
+  color: #ffffff;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#AccountBox .logWithOtherSocial .socialBox:hover {
+  background-color: #ffffff;
+  color: #1c2c58;
+}
+
 #AccountBox h3 {
   text-align: center;
   color: #ffffff;
@@ -570,6 +627,117 @@ footer p::selection {
     width: 100%;
     border-color: #ffffff;
   }
+}
+
+.profInfoSide {
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-color: #1c2c58;
+  padding: 20px;
+}
+
+.profInfoSide .userPicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profInfoSide .userPicture .boxOfPic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #f3efca;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.profInfoSide .userPicture .boxOfPic img {
+  width: 150px;
+}
+
+.profInfoSide .userInfo .userName {
+  text-align: center;
+  color: #ffffff;
+}
+
+.profInfoSide .userInfo .userName h4 {
+  margin: 0;
+}
+
+.profInfoSide .userInfo .userGrades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.profInfoSide .userInfo .userGrades .gradeBox {
+  padding: 3px;
+  color: #ffffff;
+}
+
+.profInfoSide .userInfo .userGrades .gradeBox p {
+  margin: 0;
+}
+
+.profInfoSide .userInfo .detailBox {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.profInfoSide .userInfo .userSetting {
+  text-align: center;
+}
+
+.profInfoSide .userInfo .userSetting .settingBox {
+  border: 1px solid #f3efca;
+  display: inline-block;
+  padding: 10px;
+}
+
+.profInfoSide .userInfo .userSetting .settingBox a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.profActivitySide {
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-color: #1c2c58;
+  padding: 20px;
+}
+
+.profActivitySide .bioBox {
+  text-align: center;
+  color: #ffffff;
+}
+
+.profActivitySide .bioBox hr {
+  width: 50%;
+  border-color: white;
+}
+
+.profActivitySide .advancedInfo {
+  text-align: center;
+  color: #ffffff;
+}
+
+.profActivitySide .advancedInfo hr {
+  width: 50%;
+  border-color: white;
 }
 
 * {

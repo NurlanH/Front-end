@@ -1,0 +1,102 @@
+.profInfoSide{
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    background-color: $MainColor;
+    padding:20px;
+
+    .userPicture{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+        .boxOfPic{
+            width: 150px;
+            height: 150px;
+            border: 1px solid $BorderColor;
+            overflow: hidden;
+            border-radius: 100%;
+            img{
+                width: 150px;
+            }
+        }
+    }
+
+    .userInfo{
+
+        
+        .userName{
+            text-align: center;
+            color: $WhiteFontColor;
+            h4{
+                margin: 0;
+                
+            }
+        }
+
+        .userGrades{
+            display: flex;
+            justify-content: space-evenly;
+
+            .gradeBox{
+                padding: 3px;
+                color: $WhiteFontColor;
+                p{
+                    margin: 0;
+                }
+            }
+        }
+
+        .detailBox{
+            color: $WhiteFontColor;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .userSetting{
+            text-align: center;
+
+            .settingBox{
+                border: 1px solid $BorderColor;
+                display: inline-block;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: $WhiteFontColor;
+                    padding: 15px;
+                    
+                }
+            }
+          
+        }
+    }
+
+}
+
+.profActivitySide{
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    background-color: $MainColor;
+    padding: 20px;
+
+    .bioBox{
+        text-align: center;
+        color: $WhiteFontColor;
+
+        hr{
+            width: 50%;
+            border-color: white;
+        }
+    }
+    
+    .advancedInfo{
+        text-align: center;
+        color: $WhiteFontColor;
+
+        hr{
+            width: 50%;
+            border-color: white;
+        }
+    }
+}
