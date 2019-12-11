@@ -183,10 +183,17 @@ header{
                     outline: none;
                     cursor: pointer;
                     border: none;
+                    transition: all 0.1s ease-in-out;
+                    
+                    &:hover{
+                        background: $HoverColor!important;
+                        color: $DarkFontColor;
+                    }
                 }
 
                 .LangBox{
-                    border: 1px solid $BorderColor;
+                    border-bottom: 1px solid $BorderColor;
+
                 }
             }
 

@@ -5,6 +5,7 @@
 @import "_MainSlider.scss";
 @import "_Footer.scss";
 @import "_MyAnimations.scss";
+@import "_Account.scss";
 
 // My Controls
 *{
@@ -37,3 +38,9 @@ html,body{
 }
 
 
+
+.box{
+    width:100%;
+    height: 100%;
+    background-color: $MainColor;
+}
