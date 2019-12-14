@@ -8,6 +8,28 @@
 // })
 
 
+//for slider sec Index
+$(document).ready(function() {
+    document.body.style.overflow = "hidden";
+
+    $("#devformcontent").css({"display":"none"});
+    setTimeout(function(){
+        $('.preloader').fadeOut('slow');
+        document.body.style.overflowY = "scroll";
+        $("#devformcontent").css({"display":"block"})
+
+    },500)
+    
+    setTimeout(function(){
+        $(".mainSlider h1").addClass("animated fadeInDown");
+
+    },500)
+    setTimeout(function(){
+        $(".mainSlider p").addClass("animated fadeIn");
+        $(".mainSlider hr").addClass("animated fadeIn");
+        $(".mainSlider a").addClass("animated fadeIn");
+    },500)
+});
 
 
 //For main slider

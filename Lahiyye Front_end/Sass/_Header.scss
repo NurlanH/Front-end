@@ -50,7 +50,7 @@
                     display: block;
                     padding:10px;
                     text-align:center;
-                    font-weight: bold;
+                    font-weight: 700;
                 }
 
 
@@ -107,20 +107,18 @@ header{
    
 
     .brand{
-            cursor: pointer;
-            display: inline-block;
-            padding: 10px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
             
-                a{
-                    text-decoration: none;
-                    padding: 10px 0;
+        a{
+            text-decoration: none;
+            padding: 10px 0;
                     
-                    img{
-                        width: 136px;
-                    }
-                }
-
-         
+            img{
+                 width: 136px;
+            }
+        }   
     }
 
 
@@ -143,18 +141,21 @@ header{
                         color:$WhiteFontColor;
                     }
                 }
+                
                 li{
                     list-style: none;
                     margin-right: 20px;
                     background-color: $MainColor;
-                    font-weight: 700;  
                     cursor: pointer;
                     border: none;
                     border-radius: 4px;
+
                     a{
                         color:  $WhiteFontColor;
                         text-decoration: none;
                         padding: 5px 10px;
+                        font-weight: 700;
+
                         &::selection{
                             background: none;
                         }
@@ -172,7 +173,7 @@ header{
                 li:last-child{
                     margin-right: 0;
                 }
-                .logBtn,.regBtn{
+                .logBtn{
                     padding: 5px 10px;
                 }
                 select#langSelect{
@@ -222,7 +223,7 @@ header{
                 ul{
                     padding-left: 10px;
                  li:not(:last-child){margin-right: 12px;}
-                 .navForm,.logBtn,.regBtn{
+                 .navForm,.logBtn{
                     display: inline-flex;
                     align-items: center;
                     i{

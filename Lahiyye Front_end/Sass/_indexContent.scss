@@ -17,10 +17,15 @@
         min-height: 500px;
             
             .sliderWord{
+                width: auto;
+                height: auto;
+                padding: 20px 0;
+                overflow: hidden;
                 h1{
                     font-weight: 700;
                     color: $WhiteFontColor;
                 }
+                  
                 p{
                     color:$WhiteFontColor;
                 }
@@ -51,6 +56,11 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 box-shadow: 0 0 10px $DarkShadow;
+                transition: all 0.4s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.02);
+                }
             }
     }
    
@@ -87,7 +97,7 @@
     }
 
     .stepWord{
-        h3{
+        h4{
             color:$DarkFontColor;
             text-align: center;
         }
@@ -95,10 +105,23 @@
     .stepIcon{
         text-align: center;
       
-       i{
-           font-size: 3em;
-           color: $MainColorExLight;
-       }
+
+        .circleForIcon{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: $MainColorExLight;
+            box-shadow: 0 0 5px $DarkShadow;
+            i{
+                font-size: 2.5em;
+                color: $WhiteFontColor;
+            }
+        }
+
+      
     }
 }
 //end Step Tutorial
