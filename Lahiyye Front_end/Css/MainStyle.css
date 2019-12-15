@@ -514,6 +514,148 @@ header .navSecControl .respNav {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mainSlider .sliderRow .sliderWord h1 {
+    font-size: 1.5em;
+  }
+  .mainSlider .sliderRow .sliderWord p {
+    font-size: 0.9em;
+  }
+  .mainSlider .sliderRow .sliderWord a {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+  .mainSlider .sliderRow .sliderImg {
+    height: 250px;
+  }
+  .mainSlider .sliderRow .sliderImg:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  .stepTutorial {
+    padding: 17px;
+  }
+  .stepTutorial hr {
+    width: 50%;
+  }
+  .stepTutorial .stepWord h4 {
+    color: #212121;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  .stepTutorial .stepIcon .circleForIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .stepTutorial .stepIcon .circleForIcon i {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainSlider .sliderRow .sliderWord h1 {
+    font-size: 1.8em;
+  }
+  .mainSlider .sliderRow .sliderWord p {
+    font-size: 1.1em;
+  }
+  .mainSlider .sliderRow .sliderWord a {
+    padding: 10px;
+    font-size: 1em;
+  }
+  .mainSlider .sliderRow .sliderImg {
+    height: 250px;
+  }
+  .mainSlider .sliderRow .sliderImg:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  .stepTutorial {
+    padding: 10px;
+    min-height: 380px;
+  }
+  .stepTutorial hr {
+    width: 50%;
+  }
+  .stepTutorial .stepWord h4 {
+    color: #212121;
+    text-align: center;
+    font-size: 1em;
+  }
+  .stepTutorial .stepIcon .circleForIcon {
+    width: 70px;
+    height: 70px;
+  }
+  .stepTutorial .stepIcon .circleForIcon i {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .mainSlider .sliderRow .sliderImg {
+    height: 300px;
+  }
+  .mainSlider .sliderRow .sliderImg:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .stepTutorial {
+    padding: 10px;
+    min-height: 380px;
+  }
+  .stepTutorial hr {
+    width: 50%;
+  }
+  .stepTutorial .stepWord h4 {
+    color: #212121;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .stepTutorial .stepIcon .circleForIcon {
+    width: 80px;
+    height: 80px;
+  }
+  .stepTutorial .stepIcon .circleForIcon i {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+  .mainSlider .sliderRow .sliderImg {
+    height: 300px;
+  }
+  .mainSlider .sliderRow .sliderImg:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .mainSlider .sliderRow .sliderWord p {
+    font-size: 1.3em;
+  }
+  .mainSlider .sliderRow .sliderWord a {
+    padding: 20px;
+    font-size: 1.2em;
+  }
+  .stepTutorial {
+    padding: 10px;
+    min-height: 380px;
+  }
+  .stepTutorial hr {
+    width: 50%;
+  }
+  .stepTutorial .stepWord h4 {
+    color: #212121;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .stepTutorial .stepIcon .circleForIcon {
+    width: 80px;
+    height: 80px;
+  }
+  .stepTutorial .stepIcon .circleForIcon i {
+    font-size: 2.5em;
+  }
+}
+
 footer {
   width: 100%;
   height: 8vh;
@@ -545,9 +687,9 @@ footer p::selection {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 2560px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   footer p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -806,7 +948,7 @@ html, body {
 
 #devformcontent {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .pageWrapperForIndex {

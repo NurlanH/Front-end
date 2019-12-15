@@ -125,3 +125,279 @@
     }
 }
 //end Step Tutorial
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    //Main Slider
+
+    .mainSlider{
+
+
+        .sliderRow{
+                
+                .sliderWord{
+                    h1{
+                        font-size: 1.5em
+                    }
+                    
+                    p{
+                        font-size: 0.9em
+                    }
+                    a{
+                        padding: 8px;
+                        font-size: 0.9em;
+                    }
+                }
+
+                .sliderImg{
+                    height: 250px;
+
+                    &:hover{
+                        transform: scale(1.01);
+                    }
+                }
+        }
+    
+    }
+
+
+    // end Main Slider
+
+
+
+    //Step Tutorial
+    .stepTutorial{
+        padding: 17px;
+
+        
+        hr{
+            width: 50%;
+        }
+        .stepWord{
+            h4{
+                color:$DarkFontColor;
+                text-align: center;
+                font-size: 0.7em;
+            }
+
+        }
+        .stepIcon{
+        
+
+            .circleForIcon{
+                width: 50px;
+                height: 50px;
+                i{
+                    font-size: 1.5em;
+                }
+            }
+
+        
+        }
+    }
+    //end Step Tutorial
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    //Main Slider
+
+    .mainSlider{
+
+        .sliderRow{
+                
+                .sliderWord{
+                    h1{
+                        font-size: 1.8em
+                    }
+                    
+                    p{
+                        font-size: 1.1em
+                    }
+                    a{
+                        padding: 10px;
+                        font-size:1em;
+                    }
+                }
+
+                .sliderImg{
+                    height: 250px;
+
+                    &:hover{
+                        transform: scale(1.01);
+                    }
+                }
+        }
+    
+    }
+
+
+    // end Main Slider
+
+
+
+    //Step Tutorial
+    .stepTutorial{
+        padding: 10px;
+        min-height: 380px;
+
+        
+        hr{
+            width: 50%;
+        }
+        .stepWord{
+            h4{
+                color:$DarkFontColor;
+                text-align: center;
+                font-size: 1em;
+            }
+
+        }
+        .stepIcon{
+        
+
+            .circleForIcon{
+                width: 70px;
+                height: 70px;
+                i{
+                    font-size: 1.7em;
+                }
+            }
+
+        
+        }
+    }
+    //end Step Tutorial
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width:1439px){
+    //Main Slider
+
+    .mainSlider{
+
+        .sliderRow{
+
+                .sliderImg{
+                    height: 300px;
+
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+        }
+    
+    }
+
+
+    // end Main Slider
+
+
+
+    //Step Tutorial
+    .stepTutorial{
+        padding: 10px;
+        min-height: 380px;
+
+        
+        hr{
+            width: 50%;
+        }
+        .stepWord{
+            h4{
+                color:$DarkFontColor;
+                text-align: center;
+                font-size: 1.4em;
+            }
+
+        }
+        .stepIcon{
+        
+
+            .circleForIcon{
+                width: 80px;
+                height: 80px;
+                i{
+                    font-size: 2.5em;
+                }
+            }
+
+        
+        }
+    }
+    //end Step Tutorial
+
+}
+
+
+@media only screen and (min-width: 1440px) and (max-width:2560px){
+    //Main Slider
+
+    .mainSlider{
+
+        .sliderRow{
+
+                .sliderImg{
+                    height: 300px;
+
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+
+                .sliderWord{
+                    p{
+                        font-size: 1.3em;
+                    }
+
+                    a{
+                        padding: 20px;
+                        font-size: 1.2em;
+                    }
+                }
+        }
+    
+    }
+
+
+    // end Main Slider
+
+
+
+    //Step Tutorial
+    .stepTutorial{
+        padding: 10px;
+        min-height: 380px;
+
+        
+        hr{
+            width: 50%;
+        }
+        .stepWord{
+            h4{
+                color:$DarkFontColor;
+                text-align: center;
+                font-size: 1.4em;
+            }
+
+        }
+        .stepIcon{
+        
+
+            .circleForIcon{
+                width: 80px;
+                height: 80px;
+                i{
+                    font-size: 2.5em;
+                }
+            }
+
+        
+        }
+    }
+    //end Step Tutorial
+
+}
