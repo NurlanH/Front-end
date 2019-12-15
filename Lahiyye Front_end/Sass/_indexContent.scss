@@ -115,9 +115,17 @@
             border-radius: 50%;
             background-color: $MainColorExLight;
             box-shadow: 0 0 5px $DarkShadow;
+            cursor: pointer;
             i{
                 font-size: 2.5em;
                 color: $WhiteFontColor;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover{
+                i{
+                    transform: rotate(30deg);
+                }
             }
         }
 
@@ -350,11 +358,11 @@
 
                 .sliderWord{
                     p{
-                        font-size: 1.3em;
+                        font-size: 1em;
                     }
 
                     a{
-                        padding: 20px;
+                        padding: 15px;
                         font-size: 1.2em;
                     }
                 }
