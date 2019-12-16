@@ -1,35 +1,40 @@
-// $(document).scroll(function(){
-//     if(window.pageYOffset >= 103){
-//         $("header").addClass("headerFixed");
-      
-//     }else if(window.pageYOffset <= 1){
-//         $("header").removeClass("headerFixed");
-//     }
-// })
+// When scroll header is fixed
+$(document).scroll(function(){
+    $("header").css({"opacity":0});
+    if(window.pageYOffset >= 103){
+        $("header").addClass("headerFixed");
+        $("header").css({"opacity":1});
+
+    }else if(window.pageYOffset <= 1){
+        $("header").removeClass("headerFixed");
+        $("header").css({"opacity":1});
+    }
+
+})
+
 
 
 //for slider sec Index
-$(document).ready(function() {
-    document.body.style.overflow = "hidden";
+// $(document).ready(function() {
+//     document.body.style.overflow = "none";
+//     $("#devformcontent").css({"display":"none"});
+//     setTimeout(function(){
+//         $('.preloader').fadeOut('slow');
+//         document.body.style.overflowY = "scroll";
+//         $("#devformcontent").css({"display":"block"})
 
-    $("#devformcontent").css({"display":"none"});
-    setTimeout(function(){
-        $('.preloader').fadeOut('slow');
-        document.body.style.overflowY = "scroll";
-        $("#devformcontent").css({"display":"block"})
-
-    },500)
+//     },500)
     
-    setTimeout(function(){
-        $(".mainSlider h1").addClass("animated fadeInDown");
+//     setTimeout(function(){
+//         $(".mainSlider h1").addClass("animated fadeInDown");
 
-    },500)
-    setTimeout(function(){
-        $(".mainSlider p").addClass("animated fadeIn");
-        $(".mainSlider hr").addClass("animated fadeIn");
-        $(".mainSlider a").addClass("animated fadeIn");
-    },500)
-});
+//     },500)
+//     setTimeout(function(){
+//         $(".mainSlider p").addClass("animated fadeIn");
+//         $(".mainSlider hr").addClass("animated fadeIn");
+//         $(".mainSlider a").addClass("animated fadeIn");
+//     },500)
+// });
 
 
 //For main slider

@@ -122,7 +122,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 header .brand {
@@ -242,7 +246,7 @@ header .navSecControl .respNav {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   header {
-    height: 100px;
+    height: 80px;
   }
   header .brand a img {
     width: 123px;
@@ -367,6 +371,13 @@ header .navSecControl .respNav {
   border-bottom: 1px solid #ffffff;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.headerFixed {
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 0px 3px #ffffff;
+          box-shadow: 0 0px 3px #ffffff;
 }
 
 .mainSlider {
@@ -816,115 +827,179 @@ footer p::selection {
   }
 }
 
-.profInfoSide {
+.profileBox {
   width: 100%;
   height: auto;
-  min-height: 450px;
-  background-color: #303F9F;
+  min-height: 500px;
   padding: 20px;
+  margin-top: 75px;
 }
 
-.profInfoSide .userPicture {
+.profileBox .profileInfo .profilePic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+}
+
+.profileBox .profileInfo .profilePic img {
+  width: 250px;
+  height: 250px;
+}
+
+.profileBox .profileInfo .userInfo {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.profInfoSide .userPicture .boxOfPic {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #ffffff;
-  overflow: hidden;
-  border-radius: 100%;
-}
-
-.profInfoSide .userPicture .boxOfPic img {
-  width: 150px;
-}
-
-.profInfoSide .userInfo .userName {
+.profileBox .profileInfo .userInfo h4 {
   text-align: center;
-  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.profInfoSide .userInfo .userName h4 {
-  margin: 0;
-}
-
-.profInfoSide .userInfo .userGrades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.profInfoSide .userInfo .userGrades .gradeBox {
-  padding: 3px;
-  color: #ffffff;
-}
-
-.profInfoSide .userInfo .userGrades .gradeBox p {
-  margin: 0;
-}
-
-.profInfoSide .userInfo .detailBox {
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.profInfoSide .userInfo .userSetting {
+.profileBox .profileInfo .userInfo p {
   text-align: center;
 }
 
-.profInfoSide .userInfo .userSetting .settingBox {
-  border: 1px solid #ffffff;
+.profileBox .profileInfo .userSetting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileBox .profileInfo .userSetting .settingBtn {
   display: inline-block;
-  padding: 10px;
+  background-color: #303F9F;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #303F9F;
 }
 
-.profInfoSide .userInfo .userSetting .settingBox a {
+.profileBox .profileInfo .userSetting .settingBtn a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
-  padding: 15px;
+  padding: 8px 15px;
+  font-weight: 700;
 }
 
-.profActivitySide {
-  width: 100%;
-  height: auto;
-  min-height: 450px;
+.profileBox .profileInfo .userSetting .settingBtn:hover {
+  background-color: #ffffff;
+  border: 1px solid #303F9F;
+}
+
+.profileBox .profileInfo .userSetting .settingBtn:hover a {
+  color: #212121;
+}
+
+.profileBox .profileInfo .userDetail {
+  margin-top: 15px;
+}
+
+.profileBox .profileInfo .userDetail p {
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.profileBox .profileInfo .userDetail i {
+  color: #303F9F;
+}
+
+.profileBox .profileInfo .userDetail .usersocialLinks {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profileBox .profileInfo .userDetail .usersocialLinks a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #303F9F;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.profileBox .profileInfo .userDetail .usersocialLinks a:hover {
   background-color: #303F9F;
-  padding: 20px;
-}
-
-.profActivitySide .bioBox {
-  text-align: center;
   color: #ffffff;
 }
 
-.profActivitySide .bioBox hr {
-  width: 50%;
-  border-color: white;
-}
-
-.profActivitySide .advancedInfo {
-  text-align: center;
+.profileBox .profileInfo .userDetail .usersocialLinks a:hover i {
   color: #ffffff;
 }
 
-.profActivitySide .advancedInfo hr {
-  width: 50%;
-  border-color: white;
+.profileBox .userActivity {
+  border-left: 1px solid #303F9F;
+  border-right: 1px solid #303F9F;
+}
+
+.profileBox .userActivity .profileActivity {
+  padding: 20px 0 0 0;
+}
+
+.profileBox .userActivity .userBio h2 {
+  text-align: center;
+}
+
+.profileBox .userActivity .userBio .bioContent {
+  padding: 0px 10px;
+}
+
+.profileBox .userActivity .userBio .bioContent p {
+  text-align: center;
+}
+
+.profileBox .userActivity .userHobbies h2 {
+  text-align: center;
+}
+
+.profileBox .userActivity .userHobbies .hobbyContent {
+  padding: 0 10px;
+}
+
+.profileBox .userActivity .userHobbies .hobbyContent p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .profileBox {
+    padding: 5px;
+    margin-top: 110px;
+  }
+  .profileBox .profileInfo .profilePic img {
+    width: 200px;
+    height: 200px;
+  }
+  .profileBox .profileInfo .userSetting .settingBtn a {
+    padding: 5px 12px;
+  }
+  .profileBox .profileInfo .userDetail .usersocialLinks {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .profileBox {
+    padding: 5px;
+    margin-top: 110px;
+  }
+  .profileBox .profileInfo .profilePic img {
+    width: 200px;
+    height: 200px;
+  }
+  .profileBox .profileInfo .userSetting .settingBtn a {
+    padding: 5px 12px;
+  }
 }
 
 * {
@@ -979,6 +1054,11 @@ html, body {
 .pageWrapperForIndex {
   min-height: 100%;
   position: relative;
+  margin-top: 67px;
+}
+
+.notheader {
+  margin: 0;
 }
 
 #particle {

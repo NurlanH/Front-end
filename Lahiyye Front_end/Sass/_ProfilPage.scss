@@ -1,102 +1,222 @@
-.profInfoSide{
+.profileBox{
     width: 100%;
     height: auto;
-    min-height: 450px;
-    background-color: $MainColor;
-    padding:20px;
+    min-height: 500px;
+    padding: 20px;
+    margin-top: 75px;
 
-    .userPicture{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        
-        .boxOfPic{
-            width: 150px;
-            height: 150px;
-            border: 1px solid $BorderColor;
+    .profileInfo{
+        .profilePic{
+            display:flex;
+            justify-content: center;
             overflow: hidden;
-            border-radius: 100%;
             img{
-                width: 150px;
+                width: 250px;
+                height: 250px;
             }
         }
-    }
 
-    .userInfo{
-
-        
-        .userName{
-            text-align: center;
-            color: $WhiteFontColor;
+        .userInfo{
+            margin-top: 10px;
+            margin-bottom: 10px;
             h4{
-                margin: 0;
-                
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 5px;
             }
-        }
-
-        .userGrades{
-            display: flex;
-            justify-content: space-evenly;
-
-            .gradeBox{
-                padding: 3px;
-                color: $WhiteFontColor;
-                p{
-                    margin: 0;
-                }
+            p{
+                text-align: center;
             }
-        }
-
-        .detailBox{
-            color: $WhiteFontColor;
-            display: flex;
-            justify-content: space-evenly;
         }
 
         .userSetting{
-            text-align: center;
+            display: flex;
+            justify-content: center;
 
-            .settingBox{
-                border: 1px solid $BorderColor;
-                display: inline-block;
-                padding: 10px;
+           .settingBtn{
+               display: inline-block;
+               background-color: $MainColor;
+               border-radius: 3px;
+               transition: all 0.2s ease-in-out;
+               border: 1px solid $MainColor;
                 a{
+                    display: block;
                     text-decoration: none;
                     color: $WhiteFontColor;
-                    padding: 15px;
-                    
+                    padding: 8px 15px;
+                    font-weight: 700;
+
+                }
+
+                &:hover{
+                    background-color: $MainColorWhite;
+                    border: 1px solid $MainColor;
+                    a{
+                        color: $DarkFontColor;
+                    }
                 }
             }
-          
+           
+        }
+
+        .userDetail{
+            margin-top: 15px;
+
+            p{
+                text-align: center;
+                margin-bottom: 3px;
+            }
+
+            i{
+                color: $MainColor;
+            }
+
+            .usersocialLinks{
+                text-align: center;
+                margin-top: 20px;
+                a{
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $MainColor;
+                    padding: 10px;
+                    border-radius: 3px;
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        background-color: $MainColor;
+                        color: $WhiteFontColor;
+                        i{
+                            color: $WhiteFontColor;
+                        }
+                    }
+                }
+            }
+           
         }
     }
+
+    .userActivity{
+        
+    border-left: 1px solid $MainColor;
+    border-right: 1px solid $MainColor;
+        .profileActivity{
+            padding: 20px 0 0 0;
+        }
+
+        .userBio{
+            h2{
+                text-align: center;
+            }
+
+            .bioContent{
+                padding: 0px 10px;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
+
+        .userHobbies{
+            h2{
+                text-align: center;
+            }
+
+            .hobbyContent{
+                padding: 0 10px;
+                    p{
+                       text-align: center;
+                    }
+            }
+           
+        }
+
+
+
+    }
+
+    
 
 }
 
-.profActivitySide{
-    width: 100%;
-    height: auto;
-    min-height: 450px;
-    background-color: $MainColor;
-    padding: 20px;
 
-    .bioBox{
-        text-align: center;
-        color: $WhiteFontColor;
 
-        hr{
-            width: 50%;
-            border-color: white;
-        }
-    }
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+   
+    .profileBox{
+        padding: 5px;
+        margin-top: 110px;
     
-    .advancedInfo{
-        text-align: center;
-        color: $WhiteFontColor;
+        .profileInfo{
+            .profilePic{
+              
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
 
-        hr{
-            width: 50%;
-            border-color: white;
+            .userSetting{
+               .settingBtn{
+                  
+                    a{
+                        padding: 5px 12px;
+    
+                    }
+                }
+               
+            }
+    
+            .userDetail{
+    
+                p{
+                }
+    
+    
+                .usersocialLinks{
+                    text-align: center;
+                    margin-top: 20px;
+                    a{
+                       
+                    }
+                }
+               
+            }
         }
-    }
+        
+    
+    }  
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .profileBox{
+        padding: 5px;
+        margin-top: 110px;
+    
+        .profileInfo{
+            .profilePic{
+              
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .userSetting{
+               .settingBtn{
+                  
+                    a{
+                        padding: 5px 12px;
+    
+                    }
+                }
+               
+            }
+    
+        }
+        
+    
+    }    
 }

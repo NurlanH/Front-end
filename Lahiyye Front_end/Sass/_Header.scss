@@ -103,8 +103,11 @@ header{
     background-color: $MainColor;
     display: flex;
     align-items: center;
-    position: relative;
-   
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    
 
     .brand{
         cursor: pointer;
@@ -208,7 +211,7 @@ header{
 // Responsive
 @media only screen and (min-width: 0px) and (max-width: 767px){
     header{
-        height: 100px;
+        height: 80px;
         .brand {
             a{
                 img{
