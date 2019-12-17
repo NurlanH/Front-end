@@ -43,11 +43,9 @@
                             <a href="Profile.html">Hesabım <img width="20" src="Images/UsersFolder/ProfilePic/devAvatar.svg" alt=""></a>
                         </li>
                         <li class="dvBtn">
-                            <a href="Login.html">Daxil ol</a>
+                            <a href="Login.html">Giriş</a>
                         </li>
-                        <li class="dvBtn">
-                            <a href="Register.html">Qeydiyyat keç</a>
-                        </li>
+                       
                         <div class="resLangBox dvBtn mb-3">
                             <select name="" id="langSelect">
                                 <option value="AZ">AZ</option>
@@ -89,10 +87,7 @@
                                         <a href="Profile.html">Hesabım <img width="20" src="Images/UsersFolder/ProfilePic/devAvatar.svg" alt=""></a>
                                 </li>
                                 <li class="logBtn dvBtn">
-                                    <a href="Login.html">Daxil ol</a>
-                                </li>
-                                <li class="regBtn dvBtn">
-                                    <a href="Register.html">Qeydiyyat keç</a>
+                                    <a href="Login.html">Giriş</a>
                                 </li>
                                 <div class="LangBox">
                                     <select name="" id="langSelect">
@@ -114,8 +109,114 @@
 
     <!-- Main Content -->
     <section class="pageWrapperForIndex mt-3 mb-3">
-        <div class="container">
-            
+        <div class="container-fluid">
+
+            <div id="mainFormContent">
+                <div class="row">
+                    <!-- Left side -->
+                    <div class="col-md-3">
+                        <div class="navAds">
+                            <div class="navs">
+                                <ul>
+                                    <li>
+                                        <a href="#">Taglar</a>
+                                        <a href="#">İstifadəçilər</a>
+                                        <a href="#">Proyektlər</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ads">reklam</div>
+                        </div>
+                    </div>
+                    <!-- Main form -->
+                    <div class="col-md-6">
+                        <div class="mainForm">
+                            <div class="forms">
+                                 <div class="postShareSec">
+                                    <button id="formOpenBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Post Paylaş</button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">Yeni Post</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <form method="#" action="#">
+                                                <div class="form-group">
+                                                  <label for="recipient-name" class="col-form-label">Başlıq</label>
+                                                  <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Mesaj</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                  </div> 
+
+                                                  <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Tag əlavə et</label>
+                                                    <div class="tags-input form-control" data-name="tags-input">
+                                                       
+                                                        
+                                                    </div>
+                                                  </div>
+
+                                              </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ləğv et</button>
+                                              <button id="sharebtn" type="button" class="btn btn-primary">Paylaş</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                 </div>
+                                 <hr>
+                                 <br>
+                                 <div class="formlist">
+                                     
+                                 </div>
+                            </div>
+                            <div class="paginationSec">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!-- Rightside -->
+                    <div class="col-md-3">
+                        <div class="tagsUsers">
+                            <div class="tags">
+
+                            </div>
+
+                            <div class="popularUsers">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </section>
     <!-- Main Content -->
