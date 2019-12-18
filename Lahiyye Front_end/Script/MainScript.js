@@ -56,6 +56,16 @@ $(".closeNav").click(function(){
 })
 
 
+//Particle
+
+
+$('#particle').particleground({
+    dotColor: '#000000',
+    lineColor: '#101820ff'
+});
+
+// end particle
+
   
 
 // for share post tags input
