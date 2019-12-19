@@ -29,6 +29,19 @@
             }
         }
 
+        .profileActivity{
+            padding: 20px 0 0 0;
+
+            a{
+                text-decoration: none;
+                color:$DarkFontColor;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: $MainColor;
+                }
+            }
+        }
+
         .userSetting{
             display: flex;
             justify-content: center;
@@ -98,9 +111,7 @@
         
     border-left: 1px solid $MainColor;
     border-right: 1px solid $MainColor;
-        .profileActivity{
-            padding: 20px 0 0 0;
-        }
+       
 
         .userBio{
             h2{
@@ -116,21 +127,57 @@
         }
 
 
-        .userHobbies{
+        .userSkills{
             h2{
                 text-align: center;
             }
 
-            .hobbyContent{
+            .skillContent{
                 padding: 0 10px;
-                    p{
-                       text-align: center;
-                    }
+                   ul{
+                       display: flex;
+                       justify-content: space-evenly;
+                       padding-left: 0;
+                        flex-wrap: wrap;
+                       li{
+                        list-style-type: none;
+                        padding: 10px 15px;
+                        font-weight: bold;
+                        border: 1px solid $MainColor;
+                        color: $DarkFontColor;
+                        transition: all 0.2s ease-in-out;
+                        margin-bottom: 5px;
+                        border-radius: 3px;
+                        margin-left: 5px;
+                        margin-right: 2px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $MainColor;
+                            color: $WhiteFontColor;
+                        }
+                       }
+                   }
             }
            
         }
 
 
+
+        .experience{
+            .experienceHeader{
+                h2{
+                    text-align: center;
+                }
+            }
+
+            .exp{
+                padding: 5px;
+                border: 1px solid #ccc;
+                text-align: center;
+                margin-bottom: 5px;
+                border-radius: 3px;
+            }
+        }
 
     }
 

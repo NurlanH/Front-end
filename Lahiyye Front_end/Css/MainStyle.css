@@ -866,6 +866,21 @@ footer p::selection {
   text-align: center;
 }
 
+.profileBox .profileInfo .profileActivity {
+  padding: 20px 0 0 0;
+}
+
+.profileBox .profileInfo .profileActivity a {
+  text-decoration: none;
+  color: #212121;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.profileBox .profileInfo .profileActivity a:hover {
+  color: #303F9F;
+}
+
 .profileBox .profileInfo .userSetting {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,10 +958,6 @@ footer p::selection {
   border-right: 1px solid #303F9F;
 }
 
-.profileBox .userActivity .profileActivity {
-  padding: 20px 0 0 0;
-}
-
 .profileBox .userActivity .userBio h2 {
   text-align: center;
 }
@@ -959,16 +970,56 @@ footer p::selection {
   text-align: center;
 }
 
-.profileBox .userActivity .userHobbies h2 {
+.profileBox .userActivity .userSkills h2 {
   text-align: center;
 }
 
-.profileBox .userActivity .userHobbies .hobbyContent {
+.profileBox .userActivity .userSkills .skillContent {
   padding: 0 10px;
 }
 
-.profileBox .userActivity .userHobbies .hobbyContent p {
+.profileBox .userActivity .userSkills .skillContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profileBox .userActivity .userSkills .skillContent ul li {
+  list-style-type: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: 1px solid #303F9F;
+  color: #212121;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.profileBox .userActivity .userSkills .skillContent ul li:hover {
+  background-color: #303F9F;
+  color: #ffffff;
+}
+
+.profileBox .userActivity .experience .experienceHeader h2 {
   text-align: center;
+}
+
+.profileBox .userActivity .experience .exp {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
