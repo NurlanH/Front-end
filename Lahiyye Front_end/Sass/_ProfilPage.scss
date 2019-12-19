@@ -108,16 +108,18 @@
     }
 
     .userActivity{
-        
-    border-left: 1px solid $MainColor;
-    border-right: 1px solid $MainColor;
-       
 
         .userBio{
-            h2{
-                text-align: center;
+            .bioHeader{
+                    h2{
+                        text-align: center;
+                        font-weight: 700;
+                    }
+                    hr{
+                        border-color: #ccc;
+                    }
             }
-
+           
             .bioContent{
                 padding: 0px 10px;
                 p{
@@ -128,9 +130,20 @@
 
 
         .userSkills{
-            h2{
-                text-align: center;
+            .skillheader{
+                h2{
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                hr{
+                    border-color: #ccc;
+                }
             }
+                
+                
+                
+           
 
             .skillContent{
                 padding: 0 10px;
@@ -166,13 +179,16 @@
         .experience{
             .experienceHeader{
                 h2{
+                    font-weight: 700;
                     text-align: center;
+                }
+                hr{
+                    border-color: #ccc;
                 }
             }
 
             .exp{
                 padding: 5px;
-                border: 1px solid #ccc;
                 text-align: center;
                 margin-bottom: 5px;
                 border-radius: 3px;

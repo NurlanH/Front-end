@@ -953,13 +953,13 @@ footer p::selection {
   color: #ffffff;
 }
 
-.profileBox .userActivity {
-  border-left: 1px solid #303F9F;
-  border-right: 1px solid #303F9F;
+.profileBox .userActivity .userBio .bioHeader h2 {
+  text-align: center;
+  font-weight: 700;
 }
 
-.profileBox .userActivity .userBio h2 {
-  text-align: center;
+.profileBox .userActivity .userBio .bioHeader hr {
+  border-color: #ccc;
 }
 
 .profileBox .userActivity .userBio .bioContent {
@@ -970,8 +970,13 @@ footer p::selection {
   text-align: center;
 }
 
-.profileBox .userActivity .userSkills h2 {
+.profileBox .userActivity .userSkills .skillheader h2 {
+  font-weight: 700;
   text-align: center;
+}
+
+.profileBox .userActivity .userSkills .skillheader hr {
+  border-color: #ccc;
 }
 
 .profileBox .userActivity .userSkills .skillContent {
@@ -1011,12 +1016,16 @@ footer p::selection {
 }
 
 .profileBox .userActivity .experience .experienceHeader h2 {
+  font-weight: 700;
   text-align: center;
+}
+
+.profileBox .userActivity .experience .experienceHeader hr {
+  border-color: #ccc;
 }
 
 .profileBox .userActivity .experience .exp {
   padding: 5px;
-  border: 1px solid #ccc;
   text-align: center;
   margin-bottom: 5px;
   border-radius: 3px;
