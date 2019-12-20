@@ -58,7 +58,13 @@ $(".closeNav").click(function(){
 
 //Particle
 
+//Indexpage particle
+$("#particle.particleMain").particleground({
+    dotColor: '#ffffff',
+    lineColor: '#ffffff'
+});
 
+//login register page particle
 $('#particle').particleground({
     dotColor: '#000000',
     lineColor: '#101820ff'
@@ -144,6 +150,6 @@ $.each(document.getElementsByClassName("tags-input"),function(index,el){
     }
 
     function filterTag (tag) {
-        return tag.replace(/[^\w -]/g, '').trim().replace(/\W+/g, '-');
+        return tag.replace(/[^\w #]/g, '').trim().replace(/\W+/g, '#');
     }
 });

@@ -388,6 +388,7 @@ header .navSecControl .respNav {
   background-color: #303F9F;
   overflow: hidden;
   padding: 10px;
+  position: relative;
 }
 
 .mainSlider .sliderRow {
