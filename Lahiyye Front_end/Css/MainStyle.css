@@ -1098,8 +1098,6 @@ footer p::selection {
   height: auto;
   min-height: 700px;
   padding: 20px;
-  border-right: 1px solid #303F9F;
-  border-left: 1px solid #303F9F;
 }
 
 #mainFormContent .mainForm .forms {
