@@ -153,3 +153,24 @@ $.each(document.getElementsByClassName("tags-input"),function(index,el){
         return tag.replace(/[^\w #]/g, '').trim().replace(/\W+/g, '#');
     }
 });
+
+
+
+//Profile page data tabs
+const targetTabs = document.querySelectorAll('[data-tab-target]');
+const contentTabs = document.querySelectorAll('[data-tab-content]');
+
+targetTabs.forEach(tabs=>{
+    tabs.addEventListener('click',function(){
+        const target = document.querySelector(tabs.dataset.tabTarget)
+        contentTabs.forEach(contentTab=>{
+            contentTab.classList.remove('active');
+        });
+        targetTabs.forEach(tab=>{
+            tab.classList.remove('targetActive');
+        });
+
+        tabs.classList.add('targetActive');
+        target.classList.add('active');
+    })
+});

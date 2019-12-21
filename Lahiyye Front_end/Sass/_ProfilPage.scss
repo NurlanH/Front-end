@@ -108,6 +108,45 @@
     }
 
     .userActivity{
+        .activityTabs{
+
+            
+            li.targetActive{
+                border-bottom: 2px solid $MainColor;
+            }
+
+            ul{
+                display: flex;
+                justify-content: center;
+                padding: 0;
+
+                li{
+                    list-style: none;
+                    margin-right: 10px;
+                    color: $DarkFontColor;
+                    font-weight: 700;
+                    font-size: 1.3em;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    transition: all 0.2s ease-in-out;
+                    border-bottom: 2px solid transparent;
+                    &:hover{
+                        background-color:$MainColor;
+                        color:$WhiteFontColor;
+                    }
+                }
+            }
+        }
+
+        [data-tab-content]{
+            display: none;
+        }
+
+        .active[data-tab-content]{
+            display: block;
+        }
+
+
 
         .userBio{
             .bioHeader{
@@ -195,6 +234,77 @@
             }
         }
 
+
+        #myPosts{
+            .mypostHeader{
+                h2{
+                    text-align: center;
+                    font-weight: 700;
+                }
+            }
+
+            .mypostContent{
+                .postBox{
+                    width: 100%;
+                    height: auto;
+                    min-height: 150px;
+                    border: 1px solid black;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .postUserInfo{
+                        width: 30%;
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .imageBox{
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .postUserName{
+                            text-align: center;
+
+                            p{
+                                margin-bottom: 1px;
+                            }
+                            span{
+                                display: block;
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+
+                    .postUserContent{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .postGrades{
+                        width: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        h3{
+                            margin-bottom: 0;
+                        }
+                        .LikeDisslike{
+                            i{
+                                font-size: 2em;
+                                cursor: pointer;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     

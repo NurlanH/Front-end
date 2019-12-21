@@ -165,55 +165,125 @@
                             </div>
                         </div>
                         <div class="col-md-8 col-12  userActivity mb-5">
-                            
-                            <div class="userBio">
-                                <div class="bioHeader">
-                                    <h2>Biografiya</h2>
-                                    <hr>
-                                </div>
-                                <div class="bioContent">
-                                    <p>Salam, mən Nurlan Hüseynov 21 yaşım var.Uşağ vaxtından programlaşdırmaya
-                                        çox böyük bir marağım var idi. 2017 ci ildə Bakı dövlət sosial-iqtisadi kollecinin 
-                                        programlaşdırma bölümünü bitirmişəm. 2018 də Code Academy ilə taniş oldum. Code Akademyanın mənim
-                                        gələcək iş həyatımda çox böyük bir rolunun olduğunu anladım və programlaşdırma üzrə 1 il burada təhsil aldım.
-                                        Sinif birincisi olaraq təhsili başa vurdum və hal hazırdakı bu proyekt mənim final lahiyyəmdi.
-                                    </p>
-                                </div>
+                            <div class="activityTabs">
+                                <ul>
+                                    <li data-tab-target="#UserInformation" class="targetActive">
+                                       Məlumatlar
+                                    </li>
+                                    <li data-tab-target="#myPosts">
+                                        Postlarım
+                                    </li>
+                                    <li data-tab-target="#mySaves">
+                                        Qeydlər
+                                    </li>
+                                </ul>
+                                <hr>    
                             </div>
 
-                            <div class="userSkills mb-3">
-                                <div class="skillheader">
-                                    <h2>Bacarıqlar</h2>
-                                    <hr>
-
+                            <div id="UserInformation" data-tab-content >
+                                <div class="userBio">
+                                    <div class="bioHeader">
+                                        <h2>Biografiya</h2>
+                                    </div>
+                                    <div class="bioContent">
+                                        <p>Salam, mən Nurlan Hüseynov 21 yaşım var.Uşağ vaxtından programlaşdırmaya
+                                            çox böyük bir marağım var idi. 2017 ci ildə Bakı dövlət sosial-iqtisadi kollecinin 
+                                            programlaşdırma bölümünü bitirmişəm. 2018 də Code Academy ilə tanış oldum. Code Akademyanın mənim
+                                            gələcək iş həyatımda çox böyük bir rolunun olduğunu anladım və programlaşdırma üzrə 1 il burada təhsil aldım.
+                                            Sinif birincisi olaraq təhsili başa vurdum və hal hazırdakı bu proyekt mənim final lahiyyəmdi.
+                                        </p>
+                                    </div>
                                 </div>
-
-                                <div class="skillContent">
-                                    <ul>
-                                        <li>HTML 5</li>
-                                        <li>CSS 3</li>
-                                        <li>Javascript</li>
-                                        <li>C#</li>
-                                        <li>ASP.Net</li>
-                                        <li>MS SQL</li>
-                                    </ul>
+    
+                                <div class="userSkills mb-3">
+                                    <div class="skillheader">
+                                        <h2>Bacarıqlar</h2>
+    
+                                    </div>
+    
+                                    <div class="skillContent">
+                                        <ul>
+                                            <li>HTML 5</li>
+                                            <li>CSS 3</li>
+                                            <li>Javascript</li>
+                                            <li>C#</li>
+                                            <li>ASP.Net</li>
+                                            <li>MS SQL</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-
-
-                            <div class="experience">
-                                <div class="experienceHeader">
-                                    <h2>Təcrübələr</h2>
-                                <hr>
+    
+    
+                                <div class="experience">
+                                    <div class="experienceHeader">
+                                        <h2>Təcrübələr</h2>
+                                        
+                                    </div>
+    
+                                    <div class="exp">
+                                        <h4>İş yernin adı</h4>
+                                        <p><span>2019</span>-<span>2020</span></p>
+                                        <h5>Google şirkətində baş programçı</h5>
+                                    </div>
                                     
                                 </div>
-
-                                <div class="exp">
-                                    <h4>İş yernin adı</h4>
-                                    <p><span>2019</span>-<span>2020</span></p>
-                                    <h5>Google şirkətində baş programçı</h5>
+                            </div>
+                            
+                            <div id="myPosts" data-tab-content class="active">
+                                <div class="mypostHeader">
+                                    <h2>Postlarım</h2>
                                 </div>
-                                
+                                <div class="mypostContent">
+                                    <div class="postBox">
+                                        <div class="postUserInfo">
+                                            <div class="boxOfInfo">
+                                                <div class="imageBox">
+                                                    <img width="60" src="Images/UsersFolder/ProfilePic/unnamed.jpg" alt="">
+                                                </div>
+                                                <div class="postUserName">
+                                                    <p>Nurlan Hüseynov</p>
+                                                    <span>27.12.2019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="postUserContent">
+                                            <div class="boxOfContent">
+                                                <div class="posthead">
+                                                    <h4>Təcili kömək lazımdır</h4>
+                                                </div>
+                                                <div class="postContent">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsam.</p>
+                                                </div>
+                                                <div class="postreadmore">
+                                                    <a href="#">Davamı</a>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                        <div class="postGrades">
+                                            <div class="boxOfGrades">
+                                                <div class="gradePlus">
+                                                    <h3>0</h3>
+                                                </div>
+                                                <div class="LikeDisslike">
+                                                    <div class="likebtn">
+                                                        <i class="fas fa-caret-up"></i>
+                                                    </div>
+                                                    <div class="disslikebtn">
+                                                        <i class="fas fa-caret-down"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="gradeMinus">
+                                                    <h3>0</h3>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mySaves" data-tab-content>
+                                <h2>qeydlerim</h2>
                             </div>
                         </div>
                     </div>

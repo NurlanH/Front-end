@@ -954,6 +954,46 @@ footer p::selection {
   color: #ffffff;
 }
 
+.profileBox .userActivity .activityTabs li.targetActive {
+  border-bottom: 2px solid #303F9F;
+}
+
+.profileBox .userActivity .activityTabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.profileBox .userActivity .activityTabs ul li {
+  list-style: none;
+  margin-right: 10px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.profileBox .userActivity .activityTabs ul li:hover {
+  background-color: #303F9F;
+  color: #ffffff;
+}
+
+.profileBox .userActivity [data-tab-content] {
+  display: none;
+}
+
+.profileBox .userActivity .active[data-tab-content] {
+  display: block;
+}
+
 .profileBox .userActivity .userBio .bioHeader h2 {
   text-align: center;
   font-weight: 700;
@@ -1030,6 +1070,97 @@ footer p::selection {
   text-align: center;
   margin-bottom: 5px;
   border-radius: 3px;
+}
+
+.profileBox .userActivity #myPosts .mypostHeader h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo {
+  width: 30%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo .imageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo .postUserName {
+  text-align: center;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo .postUserName p {
+  margin-bottom: 1px;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo .postUserName span {
+  display: block;
+  font-size: 0.7em;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postGrades {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postGrades h3 {
+  margin-bottom: 0;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i {
+  font-size: 2em;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
