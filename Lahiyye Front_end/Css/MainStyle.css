@@ -1081,8 +1081,9 @@ footer p::selection {
   width: 100%;
   height: auto;
   min-height: 150px;
-  border: 1px solid black;
+  border-radius: 3px;
   margin-bottom: 10px;
+  background: #00000014;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1140,6 +1141,30 @@ footer p::selection {
           justify-content: center;
 }
 
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent p {
+  width: 361px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent .postreadmore a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #303F9F;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #303F9F;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent .postreadmore a:hover {
+  background-color: #ffffff;
+  color: #303F9F;
+}
+
 .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades {
   width: 20%;
   display: -webkit-box;
@@ -1161,6 +1186,13 @@ footer p::selection {
 .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i {
   font-size: 2em;
   cursor: pointer;
+  color: #303F9F;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i:hover {
+  color: #536DFE;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1179,9 +1211,39 @@ footer p::selection {
     text-align: center;
     margin-top: 20px;
   }
+  .profileBox .userActivity .activityTabs ul li {
+    font-size: 1em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent p {
+    width: 150px;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent .postreadmore a {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades {
+    width: 20%;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1.1em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .profileBox {
     padding: 5px;
     margin-top: 110px;
@@ -1192,6 +1254,86 @@ footer p::selection {
   }
   .profileBox .profileInfo .userSetting .settingBtn a {
     padding: 5px 12px;
+  }
+  .profileBox .userActivity .activityTabs ul li {
+    font-size: 1em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo {
+    width: 53%;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent p {
+    width: 225px;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent .postreadmore a {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades {
+    width: 20%;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1.1em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 2560px) {
+  .profileBox {
+    padding: 5px;
+    margin-top: 110px;
+  }
+  .profileBox .profileInfo .profilePic img {
+    width: 250px;
+    height: 250px;
+  }
+  .profileBox .profileInfo .userSetting .settingBtn a {
+    padding: 5px 12px;
+  }
+  .profileBox .userActivity .activityTabs ul li {
+    font-size: 1.3em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserInfo {
+    width: 40%;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent h4 {
+    font-size: 1.5em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent p {
+    width: 400px;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postUserContent .postreadmore a {
+    padding: 5px 10px;
+    font-size: 1.1em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades {
+    width: 20%;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1.4em;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i {
+    font-size: 2em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .profileBox .userActivity #myPosts .mypostContent .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
   }
 }
 
