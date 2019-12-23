@@ -381,6 +381,12 @@ header .navSecControl .respNav {
           box-shadow: 0 0px 3px #ffffff;
 }
 
+.tagBox {
+  padding: 5px;
+  background-color: #303F9F;
+  color: #ffffff;
+}
+
 .mainSlider {
   width: 100%;
   height: auto;
@@ -1389,6 +1395,8 @@ footer p::selection {
   padding: 10px;
   color: #303F9F;
   border-radius: 3px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #mainFormContent .devNavs .navs ul li a:hover {
@@ -1400,7 +1408,7 @@ footer p::selection {
   width: 100%;
   height: auto;
   min-height: 700px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 #mainFormContent .mainForm .forms {
@@ -1472,26 +1480,1057 @@ footer p::selection {
   color: #212121;
 }
 
+#mainFormContent .mainForm .formlist .postBox {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: #00000014;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserInfo {
+  width: 40%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserInfo .imageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName {
+  text-align: center;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName p {
+  margin-bottom: 1px;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName span {
+  display: block;
+  font-size: 0.7em;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserContent p {
+  width: 476px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #303F9F;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #303F9F;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a:hover {
+  background-color: #ffffff;
+  color: #303F9F;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postGrades {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postGrades h3 {
+  margin-bottom: 0;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i {
+  font-size: 2em;
+  cursor: pointer;
+  color: #303F9F;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i:hover {
+  color: #536DFE;
+}
+
 #mainFormContent .tagsUsers {
   width: 100%;
   height: auto;
   min-height: 700px;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 #mainFormContent .tagsUsers .tags {
   width: 100%;
   height: auto;
   min-height: 200px;
-  border: 1px solid black;
+  background-color: rgba(204, 204, 204, 0.699);
+  border-radius: 3px;
   margin-bottom: 20px;
+  padding: 10px 0;
 }
 
-#mainFormContent .tagsUsers .popularUsers {
-  width: 100%;
-  height: auto;
-  min-height: 200px;
-  border: 1px solid black;
+#mainFormContent .tagsUsers .tags .tagHead h5 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #212121;
+}
+
+#mainFormContent .tagsUsers .tags .taglists a {
+  text-decoration: none;
+  color: #303F9F;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#mainFormContent .tagsUsers .tags .taglists a span {
+  font-size: 0.7em;
+}
+
+#mainFormContent .tagsUsers .tags .taglists a:hover {
+  color: #536DFE;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 399px) {
+  #mainFormContent {
+    width: 100%;
+  }
+  #mainFormContent .devNavs {
+    min-height: 245px;
+    padding-top: 20px;
+  }
+  #mainFormContent .devNavs .navs {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .devNavs .navs ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #mainFormContent .mainForm {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+  }
+  #mainFormContent .mainForm .forms {
+    min-height: 680px;
+    width: 100%;
+  }
+  #mainFormContent .mainForm .forms .tags-input {
+    padding: 0.175rem .75rem;
+    height: auto;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag {
+    padding: 0.25em 0.75em;
+    background-color: #536DFE;
+    color: #ffffff;
+    margin-right: 4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag:hover {
+    background-color: #ccc;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close::after {
+    content: "×";
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.25em;
+    color: white;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close:hover::after {
+    color: red;
+  }
+  #mainFormContent .mainForm .forms .tags-input .main-input {
+    border: none;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .formlist .postBox {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #00000014;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo {
+    width: 89%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .imageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName {
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName p {
+    margin-bottom: 1px;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName span {
+    display: block;
+    font-size: 0.6em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent p {
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #303F9F;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #303F9F;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a:hover {
+    background-color: #ffffff;
+    color: #303F9F;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
+  #mainFormContent .tagsUsers {
+    min-height: 300px;
+  }
+  #mainFormContent .tagsUsers .tags {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .tagsUsers .tags .tagHead h5 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #212121;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a {
+    text-decoration: none;
+    color: #303F9F;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a span {
+    font-size: 0.7em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a:hover {
+    color: #536DFE;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  #mainFormContent {
+    width: 100%;
+  }
+  #mainFormContent .devNavs {
+    min-height: 245px;
+    padding-top: 20px;
+  }
+  #mainFormContent .devNavs .navs {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .devNavs .navs ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #mainFormContent .mainForm {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+  }
+  #mainFormContent .mainForm .forms {
+    min-height: 680px;
+    width: 100%;
+  }
+  #mainFormContent .mainForm .forms .tags-input {
+    padding: 0.175rem .75rem;
+    height: auto;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag {
+    padding: 0.25em 0.75em;
+    background-color: #536DFE;
+    color: #ffffff;
+    margin-right: 4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag:hover {
+    background-color: #ccc;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close::after {
+    content: "×";
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.25em;
+    color: white;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close:hover::after {
+    color: red;
+  }
+  #mainFormContent .mainForm .forms .tags-input .main-input {
+    border: none;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .formlist .postBox {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #00000014;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo {
+    width: 39%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .imageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName {
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName p {
+    margin-bottom: 1px;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName span {
+    display: block;
+    font-size: 0.6em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent p {
+    width: 262px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #303F9F;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #303F9F;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a:hover {
+    background-color: #ffffff;
+    color: #303F9F;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
+  #mainFormContent .tagsUsers {
+    min-height: 300px;
+  }
+  #mainFormContent .tagsUsers .tags {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .tagsUsers .tags .tagHead h5 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #212121;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a {
+    text-decoration: none;
+    color: #303F9F;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a span {
+    font-size: 0.7em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a:hover {
+    color: #536DFE;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #mainFormContent {
+    width: 100%;
+  }
+  #mainFormContent .devNavs {
+    min-height: 245px;
+    padding-top: 20px;
+  }
+  #mainFormContent .devNavs .navs {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .devNavs .navs ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #mainFormContent .devNavs .navs ul li a {
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+  }
+  #mainFormContent .mainForm .forms {
+    min-height: 680px;
+    width: 100%;
+  }
+  #mainFormContent .mainForm .forms .tags-input {
+    padding: 0.175rem .75rem;
+    height: auto;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag {
+    padding: 0.25em 0.75em;
+    background-color: #536DFE;
+    color: #ffffff;
+    margin-right: 4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag:hover {
+    background-color: #ccc;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close::after {
+    content: "×";
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.25em;
+    color: white;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close:hover::after {
+    color: red;
+  }
+  #mainFormContent .mainForm .forms .tags-input .main-input {
+    border: none;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .formlist .postBox {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #00000014;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo {
+    width: 39%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .imageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName {
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName p {
+    margin-bottom: 1px;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName span {
+    display: block;
+    font-size: 0.6em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent p {
+    width: 262px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #303F9F;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #303F9F;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a:hover {
+    background-color: #ffffff;
+    color: #303F9F;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
+  #mainFormContent .tagsUsers {
+    min-height: 300px;
+  }
+  #mainFormContent .tagsUsers .tags {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .tagsUsers .tags .tagHead h5 {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #212121;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a {
+    text-decoration: none;
+    color: #303F9F;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-size: 0.7em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a span {
+    font-size: 0.5em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a:hover {
+    color: #536DFE;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #mainFormContent {
+    width: 100%;
+  }
+  #mainFormContent .devNavs {
+    min-height: 245px;
+    padding-top: 20px;
+  }
+  #mainFormContent .devNavs .navs {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .devNavs .navs ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  #mainFormContent .devNavs .navs ul li a {
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+  }
+  #mainFormContent .mainForm .forms {
+    min-height: 680px;
+    width: 100%;
+  }
+  #mainFormContent .mainForm .forms .tags-input {
+    padding: 0.175rem .75rem;
+    height: auto;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag {
+    padding: 0.25em 0.75em;
+    background-color: #536DFE;
+    color: #ffffff;
+    margin-right: 4px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag:hover {
+    background-color: #ccc;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close::after {
+    content: "×";
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.25em;
+    color: white;
+  }
+  #mainFormContent .mainForm .forms .tags-input .tag .close:hover::after {
+    color: red;
+  }
+  #mainFormContent .mainForm .forms .tags-input .main-input {
+    border: none;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms #formOpenBtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn {
+    background-color: #303F9F;
+    border: 1px solid #303F9F;
+    outline: none;
+  }
+  #mainFormContent .mainForm .forms .modal-footer #sharebtn:hover {
+    background-color: #ffffff;
+    color: #212121;
+  }
+  #mainFormContent .mainForm .formlist .postBox {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #00000014;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo {
+    width: 39%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .imageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName {
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName p {
+    margin-bottom: 1px;
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserInfo .postUserName span {
+    display: block;
+    font-size: 0.6em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent h4 {
+    font-size: 1.2em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent p {
+    width: 329px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #303F9F;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #303F9F;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postUserContent .postreadmore a:hover {
+    background-color: #ffffff;
+    color: #303F9F;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades h3 {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #303F9F;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  #mainFormContent .mainForm .formlist .postBox .postGrades .LikeDisslike i:hover {
+    color: #536DFE;
+  }
+  #mainFormContent .tagsUsers {
+    min-height: 300px;
+  }
+  #mainFormContent .tagsUsers .tags {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  #mainFormContent .tagsUsers .tags .tagHead h5 {
+    margin: 0;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #212121;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a {
+    text-decoration: none;
+    color: #303F9F;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    font-size: 1em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a span {
+    font-size: 0.7em;
+  }
+  #mainFormContent .tagsUsers .tags .taglists a:hover {
+    color: #536DFE;
+  }
 }
 
 .UserSettingPanel {
