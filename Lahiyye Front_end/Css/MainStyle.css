@@ -2099,7 +2099,7 @@ footer p::selection {
     margin-bottom: 25px;
   }
   #mainFormContent .devNavs .navs ul li a {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
   #mainFormContent .mainForm {
     width: 100%;
@@ -2109,6 +2109,9 @@ footer p::selection {
   #mainFormContent .mainForm .forms {
     min-height: 680px;
     width: 100%;
+  }
+  #mainFormContent .mainForm .forms .fileinput {
+    padding: 0.275em 0.75em;
   }
   #mainFormContent .mainForm .forms .tags-input {
     padding: 0.175rem .75rem;
@@ -2226,7 +2229,7 @@ footer p::selection {
     font-size: 1.2em;
   }
   #mainFormContent .mainForm .formlist .postBox .postUserContent p {
-    width: 262px;
+    width: 387px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2298,10 +2301,10 @@ footer p::selection {
     text-align: center;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-    font-size: 0.7em;
+    font-size: 1.1em;
   }
   #mainFormContent .tagsUsers .tags .taglists a span {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
   #mainFormContent .tagsUsers .tags .taglists a:hover {
     color: #536DFE;
