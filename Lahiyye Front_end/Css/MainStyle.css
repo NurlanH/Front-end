@@ -2624,6 +2624,68 @@ footer p::selection {
   font-weight: 700;
 }
 
+#usersList {
+  margin-top: 90px;
+}
+
+#usersList .userSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#usersList .userBox {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  padding: 10px;
+  background-color: #cccccca9;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+#usersList .userBox .userHead {
+  text-align: center;
+}
+
+#usersList .userBox .userHead img {
+  margin-bottom: 5px;
+}
+
+#usersList .userBox .userHead h5 a {
+  text-decoration: none;
+  color: #303F9F;
+}
+
+#usersList .userBox .userJob p {
+  text-align: center;
+}
+
+#usersList .userBox .userPopularity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#usersList .userBox .userPopularity p {
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+
 * {
   font-family: 'Maven Pro', sans-serif;
   font-weight: 400;
